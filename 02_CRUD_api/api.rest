@@ -1,0 +1,45 @@
+GET http://localhost:8080/movies
+content-type: application/json
+
+{
+}
+###
+
+GET http://localhost:8080/movies/1
+content-type: application/json
+
+{
+}
+###
+
+DELETE http://localhost:8080/movies/2
+content-type: application/json
+
+{
+}
+###
+
+PUT http://localhost:8080/movies/1
+content-type: application/json
+
+{
+    "isbn": "438228",
+    "title": "Updated Movie",
+    "director": {
+      "firstname": "John2",
+      "lastname": "Doe2"
+    }
+}
+###
+
+POST http://localhost:8080/movies
+content-type: application/json
+
+{
+    "isbn": "7777",
+    "title": "New Movie",
+    "director": {
+      "firstname": "Connor",
+      "lastname": "John"
+    }
+}
