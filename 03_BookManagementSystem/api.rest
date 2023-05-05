@@ -1,0 +1,40 @@
+GET http://localhost:8080/book
+content-type: application/json
+
+{
+}
+###
+
+POSt http://localhost:8080/book
+content-type: application/json
+
+{
+    "name": "book1",
+    "author": "author1",
+    "publication": "publication1"
+}
+###
+
+GET http://localhost:8080/book/2
+content-type: application/json
+
+{
+}
+###
+
+PUT http://localhost:8080/book/2
+content-type: application/json
+
+{
+    "name": "new book",
+    "author": "new author",
+    "publication": "new publication"
+}
+###
+
+DELETE http://localhost:8080/book/2
+content-type: application/json
+
+{
+}
+###
